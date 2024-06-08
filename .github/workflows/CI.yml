@@ -145,4 +145,6 @@ jobs:
     - name: API tests
       env:
         BACKEND_URL: "http://localhost:4001"
+        ADMIN_USERNAME: "admin"
+        ADMIN_PASSWORD: "admin"
       run: pytest --alluredir=allure-results tests/api/
